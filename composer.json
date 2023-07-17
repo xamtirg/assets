@@ -1,0 +1,50 @@
+{
+    "name": "xamtirg/assets",
+    "description": "Laravel assets management",
+    "license": "MIT",
+    "keywords": [
+        "xamtirg",
+        "xamtirg cms",
+        "xamtirg platform",
+        "xamtirg assets"
+    ],
+    "authors": [
+        {
+            "name": "Xamtirg",
+            "email": "xamtirg@xamtirg.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3|^8.0|^8.1",
+        "laravel/framework": "^5.6|^6|^7|^8|^9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.1|^7.0|^8.0|^9.0",
+        "mockery/mockery": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xamtirg\\Assets\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xamtirg\\Assets\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Xamtirg\\Assets\\Providers\\AssetsServiceProvider"
+            ],
+            "aliases": {
+                "Assets": "Xamtirg\\Assets\\Facades\\AssetsFacade"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "stable"
+}
